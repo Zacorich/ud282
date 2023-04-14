@@ -62,7 +62,7 @@ public class GameUI extends JPanel {
             }
         });
 
-        // control what happens when new game buttons cickes
+        // control what happens when new game buttons clicks
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -74,7 +74,7 @@ public class GameUI extends JPanel {
                 double boardX = 10; // the horizontal gap left of the grid
                 double boardY = 40; // the vertical gap above the grid
                 //return if clicked outside the grid area
-                if(e.getX()<boardX || e.getY() < boardY)
+                if(e.getX() < boardX || e.getY() < boardY)
                     return;
                 //calculate which part of the grid did they click
                 int i = (int) (3*((e.getX()-boardX)/(boardWidth-boardX)));
